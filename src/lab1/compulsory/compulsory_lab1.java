@@ -57,5 +57,4 @@ public class compulsory_lab1 {
         if(ok2==1)
             System.out.println("Willy-nilly, this semester I will learn " + vector[sumf]);
 
-
     }}

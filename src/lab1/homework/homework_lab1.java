@@ -21,13 +21,21 @@ public class homework_lab1 {
             for(int j=0; j<coloana; j++){
                 System.out.print(matrix[i][j]+"\t");}
                 System.out.println();  */
-    int m=Integer.parseInt(args[0]);
+
     //Scanner sc = new Scanner(System.in);
     //System.out.println("introduceti numarul: " );
     //int m = sc.nextInt();
 
+    String s =null;
+        try{
+            s=args[0];
+            System.out.println(s);
+            int m=Integer.parseInt(s);
+        }catch(Exception e){
+           System.out.println("eroare");
+        }
 
-
+        int m=Integer.parseInt(s);
 
 
         int matrix[][] = new int[m][m];
@@ -53,14 +61,15 @@ public class homework_lab1 {
                 int k = 0;
                 for (int j = 0; j < m; j++)
                     k = k * 10 + matrix[i][j];
-                System.out.println("line " + i + ": " + k +" ");
+
+                System.out.println("line " + i + ": " + Integer.toString(k) +" ");
             }
 
             for (int j = 0; j <m; j++) {
                 int k = 0;
                 for (int i = 0; i <m; i++)
                     k = k * 10 + matrix[i][j];
-                System.out.println("coloana " + j + ": " + k + " ");
+                System.out.println("coloana " + j + ": " +Integer.toString(k) + " ");
             }} else{
             long end = System.nanoTime();
         long timp = end - start;
